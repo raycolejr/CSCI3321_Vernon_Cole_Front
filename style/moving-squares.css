@@ -1,0 +1,35 @@
+#squares-container{
+    border-style: solid;
+    border-width: 1px;
+    border-color: pink;
+    height: 500px;
+    text-align: center;
+}
+
+.odd-square{
+    width: 50px;
+    height: 50px;
+    border: 1px dotted powderblue;
+    margin: 5px auto;
+    background-color: pink;
+    color:white;
+    line-height: 50px;
+    transition: all 6s;
+}
+.even-square{
+    width: 50px;
+    height: 50px;
+    border: 1px dashed orange;
+    margin:  5px auto;
+    background-color: teal;
+    color:white;
+    line-height: 50px;
+    transition: all 6s;
+}
+
+#squares-container:hover .odd-square{
+    transform: translateX(200px) rotate(360deg);
+}
+#squares-container:hover .even-square{
+    transform: translateX(-200px) rotate(360deg);
+}
