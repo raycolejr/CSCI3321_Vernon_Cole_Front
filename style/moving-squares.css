@@ -1,15 +1,25 @@
 #squares-container{
     border-style: solid;
     border-width: 1px;
-    border-color: pink;
+    border-color: white;
     height: 500px;
+    width: 800px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+
+body{
+    background-color: black;
+}
+
+
 
 .odd-square{
     width: 50px;
     height: 50px;
-    border: 1px dotted powderblue;
+    border: 1px dashed blue;
     margin: 5px auto;
     background-color: pink;
     color:white;
@@ -19,7 +29,7 @@
 .even-square{
     width: 50px;
     height: 50px;
-    border: 1px dashed orange;
+    border: 1px dashed powderblue;
     margin:  5px auto;
     background-color: teal;
     color:white;
@@ -28,8 +38,8 @@
 }
 
 #squares-container:hover .odd-square{
-    transform: translateX(200px) rotate(360deg);
+    transform: translateX(375px) rotate(-1080deg) scale(.75, .75);
 }
 #squares-container:hover .even-square{
-    transform: translateX(-200px) rotate(360deg);
+    transform: translateX(-340px) rotate(1080deg) scale(2,2);
 }
