@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style/calculator.css">
+
+    <script>
+        function updateDisplay(newValue){
+            //find the display box
+
+           var display = document.getElementById('display');
+
+            var validInput = true;
+              
+            switch (newValue){
+                case '': 
+                    display.innerHTML = '';
+                    break;
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                     display.innerHTML += newValue;
+                     break;
+                case '+':
+                case '-':
+                case '*':
+                case '/':
+                    //if the current content in display box ends with 
+                    // + - * / then 
+                        // do nothing
+                    if (display.innerHTML.endsWith('+') || display.innerHTML.endsWith('-') || display.innerHTML.endsWith('*') || display.innerHTML.endsWith('/')){
+                        break;
+                    }
+                    display.innerHTML += newValue;
+                    break;
+                    
+                    
+                    
+            }
+
+          
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id ="display"></div>
+        
+        <div class ="key plus" onclick="updateDisplay('+')">+</div>
+        
+        <div class="key minus" onclick="updateDisplay('-')">-</div>
+        
+        <div class="key multiply" onclick="updateDisplay('*')">*</div>
+        
+        <div class="key divide" onclick="updateDisplay('/')">/</div>
+        
+        <div class ="key digit7" onclick="updateDisplay('7')">7</div>
+        
+        <div class ="key digit8" onclick="updateDisplay('8')">8</div>
+        
+        <div class ="key digit9"onclick="updateDisplay('9')">9</div>
+        
+        <div class ="key digit4"onclick="updateDisplay('4')">4</div>
+        
+        <div class ="key digit5"onclick="updateDisplay('5')">5</div>
+        
+        <div class ="key digit6"onclick="updateDisplay('6')">6</div>
+        
+        <div class ="key digit1"onclick="updateDisplay('1')">1</div>
+        
+        <div class ="key digit2"onclick="updateDisplay('2')">2</div>
+        
+        <div class ="key digit3"onclick="updateDisplay('3')">3</div>
+        
+        <div class ="key acKey" onclick="updateDisplay('')">AC</div>
+        
+        <div class ="key digit0"onclick="updateDisplay('0')">0</div>
+        
+        <div class ="key equalKey"onclick="updateDisplay('=')">=</div>
+    </div>
+</body>
+</html>
