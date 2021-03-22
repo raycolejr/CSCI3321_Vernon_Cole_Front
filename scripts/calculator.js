@@ -34,8 +34,12 @@ function updateDisplay(newValue){
             display.innerHTML += newValue;
             break;
         case '=':
+
+
             let results = eval(display.innerHTML);
-            
+            if (results === undefined){
+                break;
+            }
             display.innerHTML = results;
             break;
         default:
