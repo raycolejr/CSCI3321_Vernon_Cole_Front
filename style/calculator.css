@@ -19,20 +19,27 @@
     border-radius: 5px;
     height: 50px;   
     text-align: right;
-    background-color: pink;
+    background-color:  lightgrey;
+    border-style: solid;
+    border-color: white;
+    border-width: .5px;
     line-height: 45px;
     grid-area: result;
+    width:375px;
+    margin:auto;
+    font-size: 25px;
 }
 
 .key{
     background-color: white;
     height: 50px;
-    width: auto;
+    width: 75px;
     height:50px;
     font-size: 20px;
     border-radius: 5px;
     text-align: center;
     line-height: 50px;
+    margin:auto;
 }
 .plus{
     grid-area: addition;
@@ -81,7 +88,7 @@
 }
 .acKey{
     grid-area: clear;
-    width: auto;
+    width: 180px;
     
 }
 .digit0{
@@ -91,5 +98,7 @@
     grid-area:equal;
     width: 75px;
     height: 275px;
+    line-height: 275px;
+    font-size: 75px;
 }
 
