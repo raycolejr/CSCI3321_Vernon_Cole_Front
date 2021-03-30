@@ -1,0 +1,93 @@
+#container{
+    display:grid;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    background-color: purple;
+    border-radius: 5px;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-areas: 
+    'square1 square2 square3'
+    'square4 square5 square6'
+    'square7 square8 square9';
+}
+#status{
+    width:400px;
+    margin: auto;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 50px;
+}
+#rules{
+    margin:auto;
+    width:400px;
+    text-align: center;
+}
+
+#start{
+    width:200px;
+    height: 50px;
+    margin: auto;
+    font-size: 25px;
+    line-height: 50px;
+    color: white;
+    background-color: teal;
+    margin-top: 10px;
+    text-align: center;
+}
+#replay{
+    width:200px;
+    height: 0px;
+    margin: auto;
+    font-size: 25px;
+    line-height: 50px;
+    color: white;
+    background-color: teal;
+    margin-top: 10px;
+    text-align: center;
+    display: visible;
+}
+
+.playbox{
+    background-color: cornflowerblue;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    font-size: 125px;
+    color: white;
+}
+
+.square1{
+    grid-area: square1;
+}
+.square2{
+    grid-area: square2;    
+}
+.square3{
+    grid-area: square3;    
+}
+.square4{
+    grid-area: square4;    
+}
+.square5{
+    grid-area: square5;    
+}
+.square6{
+    grid-area: square6;    
+}
+.square7{
+    grid-area: square7;    
+}
+.square8{
+    grid-area: square8;    
+}
+.square9{
+    grid-area: square9;    
+}
+
+
+
+
+

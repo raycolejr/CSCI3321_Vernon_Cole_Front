@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="/style/tic-tac-toe.css">
+    <script src="/scripts/tic-tac-toe.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="1" class="playbox square1" onclick="placeMarker(1)"></div>
+        <div id="2" class="playbox square2" onclick="placeMarker(2)"></div>
+        <div id="3" class="playbox square3" onclick="placeMarker(3)"></div>
+        <div id="4" class="playbox square4" onclick="placeMarker(4)"></div>
+        <div id="5" class="playbox square5" onclick="placeMarker(5)"></div>
+        <div id="6" class="playbox square6" onclick="placeMarker(6)"></div>
+        <div id="7" class="playbox square7" onclick="placeMarker(7)"></div>
+        <div id="8" class="playbox square8" onclick="placeMarker(8)"></div>
+        <div id="9" class="playbox square9" onclick="placeMarker(9)"></div>
+    </div>
+    <div id="start" onclick="startGame()">Start</div>
+    <div id="status"></div>
+    <div id="rules">
+    <h3>Rules:</h3>  
+    <p>1: Take turns placing a marker.</p>
+    <p>2: Fist to have 3 in a row wins</p>  
+    </div>
+</body>
+</html>
